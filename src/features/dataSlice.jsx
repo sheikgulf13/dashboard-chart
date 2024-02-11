@@ -23,7 +23,7 @@ export const { setData, addRow } = dataSlice.actions;
 
 export const fetchData = () => async (dispatch) => {
   try {
-    const response = await axios.get('http://dummy.restapiexample.com/api/v1/employees');
+    const response = await axios.get('https://dummy.restapiexample.com/api/v1/employees');
     dispatch(setData(response?.data?.data));
   } catch (error) {
     console.error('Error fetching data:', error);
