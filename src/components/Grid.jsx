@@ -41,7 +41,7 @@ const Grid = ({ detail }) => {
 
             }
         }
-    }
+    };
   return (
     <div className='grid'>
         <div className='select-container'>
